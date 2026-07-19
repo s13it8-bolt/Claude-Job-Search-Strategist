@@ -1,0 +1,319 @@
+# Instincts generated from https://github.com/s13it8-bolt/Claude-Job-Search-Strategist
+# Generated: 2026-07-19T16:00:49.400Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: Claude-Job-Search-Strategist-commit-conventional
+trigger: "when writing a commit message"
+confidence: 0.85
+domain: git
+source: repo-analysis
+source_repo: https://github.com/s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Commit Conventional
+
+## Action
+
+Use conventional commit format with prefixes: chore
+
+## Evidence
+
+- 1 commits analyzed
+- Detected conventional commit pattern
+- Examples: chore: align repository structure and improve workflow automation
+
+---
+id: Claude-Job-Search-Strategist-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Commit Length
+
+## Action
+
+Write moderate-length commit messages (~65 characters)
+
+## Evidence
+
+- Average commit message length: 65 chars
+- Based on 1 commits
+
+---
+id: Claude-Job-Search-Strategist-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Naming Files
+
+## Action
+
+Use camelCase naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: camelCase
+
+---
+id: Claude-Job-Search-Strategist-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: Claude-Job-Search-Strategist-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: Claude-Job-Search-Strategist-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: claude-job-search-strategist-instinct-file-naming
+trigger: "When creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Instinct File Naming
+
+## Action
+
+Name the file using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.files
+
+---
+id: claude-job-search-strategist-instinct-function-naming
+trigger: "When defining a new function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Instinct Function Naming
+
+## Action
+
+Name the function using camelCase
+
+## Evidence
+
+- Pattern in namingConventions.functions
+
+---
+id: claude-job-search-strategist-instinct-class-naming
+trigger: "When defining a new class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Instinct Class Naming
+
+## Action
+
+Name the class using PascalCase
+
+## Evidence
+
+- Pattern in namingConventions.classes
+
+---
+id: claude-job-search-strategist-instinct-constant-naming
+trigger: "When declaring a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Instinct Constant Naming
+
+## Action
+
+Name the constant using SCREAMING_SNAKE_CASE
+
+## Evidence
+
+- Pattern in namingConventions.constants
+
+---
+id: claude-job-search-strategist-instinct-import-style
+trigger: "When importing modules"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Instinct Import Style
+
+## Action
+
+Use relative import paths
+
+## Evidence
+
+- Pattern in importStyle
+
+---
+id: claude-job-search-strategist-instinct-export-style
+trigger: "When exporting modules or functions"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Instinct Export Style
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in exportStyle
+
+---
+id: claude-job-search-strategist-instinct-git-commit-prefix
+trigger: "When writing a git commit message"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Instinct Git Commit Prefix
+
+## Action
+
+Prefix the message with 'chore:' for repository structure or workflow changes
+
+## Evidence
+
+- Seen in commit 'chore: align repository structure and improve workflow automation'
+- Pattern in commits.prefixes
+
+---
+id: claude-job-search-strategist-instinct-git-commit-length
+trigger: "When writing a git commit message"
+confidence: 0.7
+domain: git
+source: repo-analysis
+source_repo: s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Instinct Git Commit Length
+
+## Action
+
+Keep the commit message concise, around 65 characters on average
+
+## Evidence
+
+- Pattern in commits.averageLength
+
+---
+id: claude-job-search-strategist-instinct-test-location
+trigger: "When adding new tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Instinct Test Location
+
+## Action
+
+Place test files in a separate folder from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation
+
+---
+id: claude-job-search-strategist-instinct-test-organization
+trigger: "When organizing code and tests"
+confidence: 0.7
+domain: architecture
+source: repo-analysis
+source_repo: s13it8-bolt/Claude-Job-Search-Strategist
+---
+
+# Claude Job Search Strategist Instinct Test Organization
+
+## Action
+
+Use a hybrid module organization with separate folders for agents and inputs
+
+## Evidence
+
+- Pattern in architecture.folderStructure.commonFolders
+- Pattern in architecture.moduleOrganization
+
