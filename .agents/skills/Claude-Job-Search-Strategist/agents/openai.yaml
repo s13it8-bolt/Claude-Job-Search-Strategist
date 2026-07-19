@@ -1,0 +1,6 @@
+interface:
+  display_name: "Claude Job Search Strategist"
+  short_description: "Repo-specific patterns and workflows for Claude-Job-Search-Strategist"
+  default_prompt: "Use the Claude-Job-Search-Strategist repo skill to follow existing architecture, testing, and workflow conventions."
+policy:
+  allow_implicit_invocation: true
